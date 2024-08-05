@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Selector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #output {
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        button {
+            margin-right: 10px;
+        }
+        select {
+            margin-right: 10px;
+        }
+        input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Email Selector</h1>
+    <label for="providerSelect">Select Email Provider:</label>
+    <select id="providerSelect">
+        <option value="all">All</option>
+        <option value="gmail">Gmail</option>
+        <option value="outlook">Outlook</option>
+        <option value="yahoo">Yahoo</option>
+    </select>
+    <br><br>
+    <label for="numEmails">Number of Emails to Generate:</label>
+    <input type="number" id="numEmails" min="1" value="1">
+    <button id="generateButton">Generate Emails</button>
+    <button id="restoreButton">Restore All Emails</button>
+    <button id="copyButton">Copy Email and Password</button>
+    <button id="loginButton">Login to Email</button>
+    <div id="output">No email selected yet.</div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
